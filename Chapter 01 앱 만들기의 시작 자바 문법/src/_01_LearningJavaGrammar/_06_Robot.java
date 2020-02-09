@@ -12,7 +12,7 @@ public class _06_Robot {
 	
 	public _06_Robot(int x, int y) {
 		this.x = x;
-		this.y = y;				// Robot r3 = new Robot(200, 200);
+		this.y = y;		// Robot r3 = new Robot(200, 200);
 	}
 	
 	_06_Robot(int x, int y, int price, String name) {
