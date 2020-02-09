@@ -13,7 +13,7 @@ public class _08_Robot {
 		this.price = price;
 		this.name = name;
 		
-		number += 1;		// Robot을 생성할 때마다 number 값이 1이 증가한다.
+		number += 1;	// Robot을 생성할 때마다 number 값이 1이 증가한다.
 		id = number;
 	}
 	
