@@ -51,18 +51,18 @@ void는 텅 비어있다는 뜻으로 moveRight 메소드는 반환하는 값이
       String name;	
       
          Robot(int x, int y, int price, String name) {
-            this.x = x;					생성자
-            this.y = y;					- 멤버 변수들을 초기화 하는데 사용된다.
+            this.x = x;			생성자
+            this.y = y;			- 멤버 변수들을 초기화 하는데 사용된다.
             this.price = price;		- 처음에 객체 생성시 한 번 실행된다.
             this.name = name;
          }
          
          void moveRight() {
             x += 5;			// x 값을 5만큼 증가시키기
-         }														멤버 메소드
-   																- 객체의 동작을 나타낸다.
-         void moveLeft() {									- 메소드 따로 사용할 수는 없으며
-            x -= 5;			// x 값을 5만큼 감소시키기			   클래스 안에서만 사용된다.
+         }								멤버 메소드
+   									- 객체의 동작을 나타낸다.
+         void moveLeft() {						- 메소드 따로 사용할 수는 없으며 클래스 안에서만 사용된다.
+            x -= 5;			// x 값을 5만큼 감소시키기		
          }
    }													
 
@@ -85,7 +85,7 @@ C언어에서 사용하는 함수는 자바의 메소드와 유사하다. 메소
 
    x = 100		→	int add(int x, int y) {
    y = 200		→	   return x + y;
-                    }
+                                }
                     
 더 알아보기
 - add라는 이름을 가진 메소드는 앞에 int가 존재한다. 이 메소드는 반환하는 데이터가 존재하고
@@ -115,7 +115,7 @@ byte, short, int long이 있다. 본 책에서는 변수 타입 int를 주로 �
 
 (2) 변수의 초기화
    int x = 10;	// 변수 x에 10을 넣는다.
-   				// x = 는 대입연산자로서 오른쪽에 있는 값을 왼쪽에 넣는다.
+   		// x = 는 대입연산자로서 오른쪽에 있는 값을 왼쪽에 넣는다.
 
 Tip
 - ==는 같다는 의미이고, =는 오른쪽에 있는 값을 왼쪽에 대입하라는 뜻이다.
@@ -123,26 +123,26 @@ Tip
 (3) 변수의 종류
 구분		변수 타입
 문자형		char		한 글자만 입력 가능
-			String		여러 글자(문자열) 입려 가능
+		  String	  여러 글자(문자열) 입려 가능
 정수형		byte		-127에서 127까지 입력 가능
-			short		-32768에서 32767까지 입력 가능
-			int			약 -21억에서 약 21억까지 입력 가능
-			long		-2의 63승에서 2의 63승-1까지 입력 가능(매우 큰 수)
-실수형		float		실수를 입력
-			double		float 형보다 많이 쓰이며 더 정확한 실수를 처리 가능
-불리언형	boolean	true 또는 false 값을 사용
+		  short		  -32768에서 32767까지 입력 가능
+		  int		  약 -21억에서 약 21억까지 입력 가능
+		  long		  -2의 63승에서 2의 63승-1까지 입력 가능(매우 큰 수)
+실수형	        float	        실수를 입력
+		  double	   float 형보다 많이 쓰이며 더 정확한 실수를 처리 가능
+불리언형	       boolean	       true 또는 false 값을 사용
 
 (4) 변수 사용의 예
 구분		변수 타입		사용 예
-문자형		char			char txt = '조';
-			String			String myHobby = 'soccer';
-정수형		byte			byte level = 100;
-			short			short num = -30000;
-			int				int money = 3000000;
-			long			long population = 2313213213;
-실수형		float			float f = 3.14f;
-			double			double d = 1.234;
-불리언형	boolean		boolean b = true;
+문자형		char		  char txt = '조';
+		  String	     String myHobby = 'soccer';
+정수형		byte		  byte level = 100;
+		  short	             short num = -30000;
+		  int		     int money = 3000000;
+		  long		     long population = 2313213213;
+실수형		float		  float f = 3.14f;
+		  double	     double d = 1.234;
+불리언형	       boolean		  boolean b = true;
 
 Tip
 - class, int, for, if 등을 예약어 또는 키워드라고 한다. 이러한 이름은 이미 자바에서 예약되어
@@ -176,10 +176,10 @@ Robot.java 파일을 만든 것과 같은 방법으로 RobotTest.java 파일을 
 Tip
 - 객체를 생성하는 방법
 ① 선언 및 생성을 따로 한다.
-	Robot robot 1; // 객체 선언
-	robot 1 = new robot(); // 객체 생성
+   Robot robot 1; // 객체 선언
+   robot 1 = new robot(); // 객체 생성
 ② 선언 및 생성을 한 번에 한다.
-	Robot robot 1 = new robot();
+   Robot robot 1 = new robot();
 이렇게 하면 Robot 클래스(설계도)를 통해 로봇이 만들어진다.
 
 (2) RobotTest.java 코드 분석하기
@@ -210,14 +210,14 @@ new 연산자를 통해 생성된 r2 인스턴스(=객체)의 멤버 변수 name
 new 연산자를 사용하게 되면 메모리에 객체가 생성된다.
 
 ① Robot r1 = new Robot();				② Robot r2 = new Robot();
-x			0								x			0
-y			0								y			0
-power		0								power		0
-price		0								price		0
-name		null								name 		null
-moveRight()								moveRight()				
-moveLeft()									moveLeft()
-showMe()									showMe()
+x	   0						x	    0
+y	   0						y	    0
+power      0						power	    0
+price      0						price	    0
+name	   null						name 	    null
+moveRight()						moveRight()				
+moveLeft()						moveLeft()
+showMe()						showMe()
 
 Tip
 - r1, r2 2개의 객체는 서로 다른 별도의 메모리 공간을 차지하게 된다. r1과 r2는 참조 변수이며
@@ -231,24 +231,24 @@ int(정수), float(실수) 등은 기초 변수에 해당되며 직접 변수에
 즉, 참조 변수가 가지고 있는 값(참조값)은 데이터들이 저장되어 있는 메모리 주소이다.
 
 ③ r1.name = "마징가";				④ r2.name = "짱가";
-x			0						x			0
-y			0						y			0
-power		0						power		0
-price		0						price		0
-name		마징가					name 		짱가
-moveRight()						moveRight()				
-moveLeft()							moveLeft()
-showMe()							showMe()
+x		0				   x		  0
+y		0			           y		  0
+power		0				   power	  0
+price		0				   price	  0
+name		마징가				 name 	       짱가
+moveRight()					   moveRight()				
+moveLeft()					   moveLeft()
+showMe()					   showMe()
 
 ⑤ r1.moveRight();					⑥ r2.moveLeft();
-x			5						x			-5
-y			0						y			0
-power		0						power		0
-price		0						price		0
-name		마징가					name 		짱가
+x		5					x		-5
+y		0					y		0
+power		0					power		0
+price		0					price		0
+name		마징가				      name 	     짱가
 moveRight()						moveRight()				
-moveLeft()							moveLeft()
-showMe()							showMe()
+moveLeft()						moveLeft()
+showMe()						showMe()
 
 ④ 생성자
 이전 예제에서 로봇 2개의 객체를 생성해 보았다. 객체를 생성한 후에 r1.name="마징가", r2.name=
@@ -257,9 +257,9 @@ showMe()							showMe()
 
 생성자는 다음과 같은 규칙을 따른다.
 
-	① 생성자의 이름은 클래스의 이름과 같아야 한다.
-	② 메소드와 달이 return 값이 없다. 따라서 생성자 이름 앞에는 int, void와 같은 반환타입을
-	적지 않는다.
+   ① 생성자의 이름은 클래스의 이름과 같아야 한다.
+   ② 메소드와 달이 return 값이 없다. 따라서 생성자 이름 앞에는 int, void와 같은 반환타입을
+   적지 않는다.
 
 객체를 생성할 때 생성자에 인수를 넘겨주는 방법으로 생성자를 사용할 수 있다.
  예) Robot r1 = new Robot (0, 0, 100, "마징가");
@@ -321,9 +321,9 @@ static 변수
       int x;
       int y;
       int price;
-      String color;		// 인스턴스 변수			→	멤버 변수
+      String color;		// 인스턴스 변수	  →  멤버 변수
       
-      Static int totalNumber;		// static 변수 →	멤버 변수
+      Static int totalNumber;		// static 변수  →	 멤버 변수
       
       void rightMove() {
          int x = 0;		// 지역 변수
