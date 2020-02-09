@@ -123,26 +123,26 @@ Tip
 (3) 변수의 종류
 구분		변수 타입
 문자형		char		한 글자만 입력 가능
-		  String	  여러 글자(문자열) 입려 가능
+                  String          여러 글자(문자열) 입려 가능
 정수형		byte		-127에서 127까지 입력 가능
-		  short		  -32768에서 32767까지 입력 가능
-		  int		  약 -21억에서 약 21억까지 입력 가능
-		  long		  -2의 63승에서 2의 63승-1까지 입력 가능(매우 큰 수)
+                  short           -32768에서 32767까지 입력 가능
+                  int             약 -21억에서 약 21억까지 입력 가능
+                  long            -2의 63승에서 2의 63승-1까지 입력 가능(매우 큰 수)
 실수형	        float	        실수를 입력
-		  double	   float 형보다 많이 쓰이며 더 정확한 실수를 처리 가능
+                  double          float 형보다 많이 쓰이며 더 정확한 실수를 처리 가능
 불리언형	       boolean	       true 또는 false 값을 사용
 
 (4) 변수 사용의 예
 구분		변수 타입		사용 예
 문자형		char		  char txt = '조';
-		  String	     String myHobby = 'soccer';
+                  String            String myHobby = 'soccer';
 정수형		byte		  byte level = 100;
-		  short	             short num = -30000;
-		  int		     int money = 3000000;
-		  long		     long population = 2313213213;
+                  short             short num = -30000;
+                  int               int money = 3000000;
+                  long              long population = 2313213213;
 실수형		float		  float f = 3.14f;
-		  double	     double d = 1.234;
-불리언형	       boolean		  boolean b = true;
+                  double            double d = 1.234;
+불리언형	       boolean           boolean b = true;
 
 Tip
 - class, int, for, if 등을 예약어 또는 키워드라고 한다. 이러한 이름은 이미 자바에서 예약되어
