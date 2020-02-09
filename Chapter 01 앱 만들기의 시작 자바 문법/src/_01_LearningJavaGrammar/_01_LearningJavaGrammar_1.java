@@ -235,7 +235,7 @@ x		0				   x		  0
 y		0			           y		  0
 power		0				   power	  0
 price		0				   price	  0
-name		마징가                              name 	       짱가
+name		마징가                              name          짱가
 moveRight()					   moveRight()				
 moveLeft()					   moveLeft()
 showMe()					   showMe()
@@ -245,7 +245,7 @@ x		5					x		-5
 y		0					y		0
 power		0					power		0
 price		0					price		0
-name		마징가                                   name 	     짱가
+name		마징가                                   name           짱가
 moveRight()						moveRight()				
 moveLeft()						moveLeft()
 showMe()						showMe()
