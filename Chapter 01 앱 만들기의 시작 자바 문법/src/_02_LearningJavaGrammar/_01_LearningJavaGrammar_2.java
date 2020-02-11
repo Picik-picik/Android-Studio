@@ -16,7 +16,7 @@ public class _01_LearningJavaGrammar_2 {
 
    DroneRobot.java          < Robot.java >          FishRobot.java
    int altitude;               int x, y;                int depth;
-   fly()                        int power;              swim()
+   fly()                       int power;               swim()
                                int price;
                                String name;
                                void mySituation()
@@ -25,7 +25,7 @@ public class _01_LearningJavaGrammar_2 {
                                
                                  Robot
                                ↗     ↖
-                    DroneRobot       FishRobot
+                      DroneRobot       FishRobot
                                
                                상속계층도
                                
