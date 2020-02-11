@@ -27,8 +27,8 @@ class _06_FishRobot extends _06_Robot {
 	
 	_06_FishRobot(int x, int y) {
 		
-		super(x, y);	// 조상의 생성자를 호출한다. 생성자의 호출 순서는 부모 생성자가 먼저이고,
-						// 다음에 자식 생성자가 호출된다.
+		super(x, y);	// 조상의 생성자를 호출한다. 생성자의 호출 순서는 부모 생성자가 먼저이고, 다음에 자식 생성자가 호출된다.
+	
 	}
 	
 	void swim() {
