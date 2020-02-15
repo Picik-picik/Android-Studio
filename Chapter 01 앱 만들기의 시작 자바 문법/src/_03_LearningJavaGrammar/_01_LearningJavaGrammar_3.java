@@ -105,7 +105,7 @@ x       y       x && y       x || y
 true   true    true          true
 true   false   false          false
 false  true    false          true
-false  false    false         false
+false  false   false          false
 
 ③ 논리 연산자 !
 NOT 연산자이며 "아니다"라는 부정을 의미한다.
