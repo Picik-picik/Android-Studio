@@ -26,7 +26,7 @@ public class _02_ArrayList {	// public으로 선언된 클래스명은 파일명
 		 */
 		
 		list1.remove(0);	// 홍길동 삭제
-		list1.remove(1);	// 홍길동이 삭제되고 세종대왕 인덱스가 0이 되기 때문에 이순식이 삭제됨.
+		list1.remove(1);	// 홍길동이 삭제되고 세종대왕 인덱스가 0이 되기 때문에 이순신이 삭제됨.
 		
 		System.out.println();	// 엔터키 효과
 		System.out.println("마지막 사이즈 : " + list1.size());
